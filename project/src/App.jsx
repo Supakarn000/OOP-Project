@@ -10,6 +10,7 @@ import Kor6 from '../jode/kor6'
 import Kor7 from '../jode/kor7'
 import Kor8 from '../jode/kor8'
 import Kor9 from '../jode/kor9'
+import Kor11 from '../jode/kor11'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path='/kor7' element={<Kor7/>}/>
           <Route path='/kor8' element={<Kor8/>}/>
           <Route path='/kor9' element={<Kor9/>}/>
+          <Route path='/kor11' element={<Kor11/>}/>
         </Routes>
       </BrowserRouter>
     </div>

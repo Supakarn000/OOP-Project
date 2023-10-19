@@ -1,33 +1,28 @@
 import React, { Component } from "react";
 
-class Kor9 extends Component {
+class Kor11 extends Component {
   constructor(props) {
     super(props);
     this.state = {
       n: 0,
       a: [],
       result: 0,
-      x1: 0,
-      y1: 0,
     };
   }
 
   calculateSum = () => {
-    let { n, a, x1, y1 } = this.state;
+    let { n, a,} = this.state;
+    let result = 0.0;
+    let sum = 0.0;
 
-    for (let i = 0; i < n; i++) {
-      if (a[i] % 4 === 1) {
-        y1++;
-      } else if (a[i] % 4 === 2) {
-        x1--;
-      } else if (a[i] % 4 === 3) {
-        x1++;
-      } else {
-        y1--;
-      }
+    for(let i=0;i<n;i++){
+        sum += a[i];
     }
 
-    this.setState({ result: `${x1} ${y1}` });
+    result = sum/n;
+
+
+    this.setState({ result: result });
   };
 
   nstate = (e) => {
@@ -48,17 +43,15 @@ class Kor9 extends Component {
   };
 
   render() {
-    const { n, result, a , x1, y1} = this.state;
+    const { n, result, a} = this.state;
 
     return (
       <div>
         <div>
-          <h1>Mod Dance</h1>
+          <h1>Average</h1>
           <label>
             Enter N:<input type="number" name="n" value={n} onChange={this.nstate} /><br/>
             Enter Array:{a.map((value, index) => (<input key={index} type="number" value={value} onChange={(e) => this.astate(e, index)}/>))}<br/>
-            Enter x1:<input type="number" name="x1" value={x1} onChange={e => this.setState({ x1: parseInt(e.target.value) })} />
-            Enter y1:<input type="number" name="y1" value={y1} onChange={e => this.setState({ y1: parseInt(e.target.value) })} />
           </label>
         </div>
         <br/>
@@ -71,4 +64,4 @@ class Kor9 extends Component {
   }
 }
 
-export default Kor9;
+export default Kor11;

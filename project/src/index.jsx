@@ -31,6 +31,9 @@ const Index = () => {
             <Link to="/kor9">
                 <button>ข้อ 9</button>
             </Link>
+            <Link to="/kor11">
+                <button>ข้อ 11</button>
+            </Link>
         </div>
     )
 }
