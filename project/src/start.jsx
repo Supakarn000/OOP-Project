@@ -1,7 +1,7 @@
 import React from "react";
 import { Navigate,Link } from "react-router-dom";
 
-const Index = () => {
+const Main = () => {
     return(
         <div>
             <Link to="/kor1">
@@ -34,9 +34,27 @@ const Index = () => {
             <Link to="/kor11">
                 <button>ข้อ 11</button>
             </Link>
+            <Link to="/kor15">
+                <button>ข้อ 15</button>
+            </Link>
+            <Link to="/kor16">
+                <button>ข้อ 16</button>
+            </Link>
+            <Link to="/kor22">
+                <button>ข้อ 22</button>
+            </Link>
+            <Link to="/kor23">
+                <button>ข้อ 23</button>
+            </Link>
+            <Link to="/kor24">
+                <button>ข้อ 24</button>
+            </Link>
+            <Link to="/kor25">
+                <button>ข้อ 25</button>
+            </Link>
         </div>
     )
 }
 
 
-export default Index;
+export default Main;
