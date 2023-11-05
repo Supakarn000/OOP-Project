@@ -34,7 +34,7 @@ class Kor6 extends Component {
     const { x,result } = this.state;
 
     return (
-      <div>
+      <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
         <div>
             <h2>0-1000</h2>
             Enter 0-1000: <input type="number" name="x" value={x} onChange={e => this.setState({ x: parseFloat(e.target.value) })} />

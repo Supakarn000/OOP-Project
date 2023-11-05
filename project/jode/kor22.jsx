@@ -42,7 +42,7 @@ class Kor22 extends Component {
 
 
     return (
-      <div>
+      <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
         <div>
           <h1>SBasicOOC</h1>
           <label>

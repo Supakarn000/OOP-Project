@@ -36,7 +36,7 @@ class Kor8 extends Component {
     const { m,n,x1,y1,x0,y0,result } = this.state;
 
     return (
-      <div>
+      <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
         <div>
             <h2>Point</h2>
             input x1 <input type="number" name="x1" value={x1} onChange={e => this.setState({ x1: parseInt(e.target.value) })} />

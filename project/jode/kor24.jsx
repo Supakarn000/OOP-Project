@@ -85,7 +85,7 @@ class Kor24 extends Component {
 
   render() {
     return (
-        <div>
+        <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
         <h1>SBasicOOPWCon</h1>
         <label>select 1-3</label>
         <select onChange={(e) => this.setState({ select: parseInt(e.target.value) })}>

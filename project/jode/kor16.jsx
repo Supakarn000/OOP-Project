@@ -52,7 +52,7 @@ class Kor16 extends Component {
     const { n, result, a} = this.state;
 
     return (
-      <div>
+      <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
         <div>
           <h1>Find SD</h1>
           <label>

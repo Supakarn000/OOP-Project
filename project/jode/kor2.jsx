@@ -27,7 +27,7 @@ class Kor2 extends Component {
     const { x, result } = this.state;
 
     return (
-      <div>
+      <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
         <div>
           <label>
             Enter จำนวนชั่วโมง:{" "}

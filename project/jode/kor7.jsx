@@ -54,7 +54,7 @@ class Kor7 extends Component {
     const { d,y,m,day,result } = this.state;
 
     return (
-      <div>
+      <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
         <div>
             <h2>What Day</h2>
             input day <input type="number" name="d" value={d} onChange={e => this.setState({ d: parseInt(e.target.value) })} />

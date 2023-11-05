@@ -38,7 +38,7 @@ class Kor4 extends Component {
     const { result } = this.state;
 
     return (
-      <div>
+      <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
         <div>
             <h2>Who is highest[23,58,88,16,27]</h2>
         </div>

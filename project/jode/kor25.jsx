@@ -52,7 +52,7 @@ class Kor25 extends Component {
     const {n, result ,a} = this.state;
 
     return (
-    <div>
+      <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
         <h1>SSum2to8</h1>
         <label>
             Input n<input type="number" name="n" value={n} onChange={this.nstate}/><br/>

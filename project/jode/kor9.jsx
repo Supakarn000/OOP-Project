@@ -51,7 +51,7 @@ class Kor9 extends Component {
     const { n, result, a , x1, y1} = this.state;
 
     return (
-      <div>
+      <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
         <div>
           <h1>Mod Dance</h1>
           <label>
