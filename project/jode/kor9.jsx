@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Navbar from "../component/navbar";
 class Kor9 extends Component {
   constructor(props) {
     super(props);
@@ -48,20 +48,33 @@ class Kor9 extends Component {
   };
 
   render() {
-    const { n, result, a , x1, y1} = this.state;
+    const { n, result, x1, y1 } = this.state;
+
+    const arrayinput = [];
+    for (let i = 0; i < n; i++) {
+      arrayinput.push(
+        <input key={i} type="number" value={this.state.a[i]} onChange={(e) => this.astate(e, i)}/>
+      );
+    }
 
     return (
-      <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
+      <div style={{justifyContent: "center", textAlign: "center", backgroundColor: "#f0f0f0", height: "100vh",}}>
+        <Navbar />
         <div>
           <h1>Mod Dance</h1>
           <label>
-            Enter N:<input type="number" name="n" value={n} onChange={this.nstate} /><br/>
-            Enter Array:{a.map((value, index) => (<input key={index} type="number" value={value} onChange={(e) => this.astate(e, index)}/>))}<br/>
-            Enter x1:<input type="number" name="x1" value={x1} onChange={e => this.setState({ x1: parseInt(e.target.value) })} />
-            Enter y1:<input type="number" name="y1" value={y1} onChange={e => this.setState({ y1: parseInt(e.target.value) })} />
+            Enter N:
+            <input type="number" name="n" value={n} onChange={this.nstate} />
+            <br />
+            Enter Array: {arrayinput}
+            <br />
+            Enter x1:
+            <input type="number" name="x1" value={x1} onChange={(e) => this.setState({ x1: parseInt(e.target.value) })}/>
+            Enter y1:
+            <input type="number" name="y1" value={y1} onChange={(e) => this.setState({ y1: parseInt(e.target.value) })}/>
           </label>
         </div>
-        <br/>
+        <br />
         <button onClick={this.calculateSum}>Calculate Result</button>
         <div>
           <p>Result: {result}</p>

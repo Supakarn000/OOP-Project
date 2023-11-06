@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Navbar from "../component/navbar";
 class Kor8 extends Component {
   constructor(props) {
     super(props);
@@ -37,6 +37,7 @@ class Kor8 extends Component {
 
     return (
       <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
+        <Navbar />
         <div>
             <h2>Point</h2>
             input x1 <input type="number" name="x1" value={x1} onChange={e => this.setState({ x1: parseInt(e.target.value) })} />

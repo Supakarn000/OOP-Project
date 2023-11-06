@@ -1,0 +1,28 @@
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin-right: 20px;
+    margin-left: 1%;
+    font-size: 25px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    color: gray;
+  }
+  

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Navbar from '../component/navbar';
 class Kor27 extends Component {
   constructor(props) {
     super(props);
@@ -31,6 +31,7 @@ class Kor27 extends Component {
   render() {
     return (
         <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
+          <Navbar />
         <h1>[SInverse]</h1>
         <p>enter number เว้นวรรคด้วย</p>
         <input type="text" value={this.state.input} onChange={this.handleInputChange} />

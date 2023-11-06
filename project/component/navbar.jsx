@@ -1,18 +1,16 @@
 import React from "react";
+import "./navbar.css";
 
+const Navbar = () => {
+  return (
+    <div className="navbar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/cal">Caculator</a></li>
+        <li><a href="https://github.com/Supakarn000/OOP-Project">Github</a></li>
+      </ul>
+    </div>
+  );
+};
 
-const navbar = () => {
-
-
-
-    return(
-        <div>
-            oat
-        </div>
-    )
-
-
-}
-
-
-export default navbar;
+export default Navbar;

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Navbar from "../component/navbar";
 
 class Kor15 extends Component {
   constructor(props) {
@@ -66,13 +67,21 @@ class Kor15 extends Component {
   render() {
     const { n, result, a} = this.state;
 
+    const arrayinput = [];
+    for (let i = 0; i < n; i++) {
+      arrayinput.push(
+        <input key={i} type="number" value={this.state.a[i]} onChange={(e) => this.astate(e, i)}/>
+      );
+    }
+
     return (
       <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
+        <Navbar />
         <div>
           <h1>Average MAX MIN SD</h1>
           <label>
             Enter N:<input type="number" name="n" value={n} onChange={this.nstate} /><br/>
-            Enter Input:{a.map((value, index) => (<input key={index} type="number" value={value} onChange={(e) => this.astate(e, index)}/>))}<br/>
+            Enter Input:{arrayinput}<br/>
           </label>
         </div>
         <br/>

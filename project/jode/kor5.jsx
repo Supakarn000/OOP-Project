@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Navbar from "../component/navbar";
 
 class Kor5 extends Component {
   constructor(props) {
@@ -32,8 +33,9 @@ class Kor5 extends Component {
 
     return (
       <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
+        <Navbar />
         <div>
-            <h2>0-1000</h2>
+            <h2>0-999</h2>
             Enter 100-999 to reverse: <input type="number" name="x" value={x} onChange={e => this.setState({ x: parseFloat(e.target.value) })} />
         </div>
         <br />

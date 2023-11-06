@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Navbar from "../component/navbar";
 
 class Kor4 extends Component {
   constructor(props) {
@@ -39,6 +40,7 @@ class Kor4 extends Component {
 
     return (
       <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
+        <Navbar />
         <div>
             <h2>Who is highest[23,58,88,16,27]</h2>
         </div>

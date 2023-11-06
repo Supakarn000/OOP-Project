@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Navbar from '../component/navbar';
 
 class Kor10 extends Component {
   constructor(props) {
@@ -34,6 +35,7 @@ class Kor10 extends Component {
     return (
       <div className="App">
         <div style={{ justifyContent: "center", textAlign: "center", backgroundColor: "#f0f0f0", height: "100vh" }}>
+        <Navbar />
         <h1>What time?</h1>
           <label>enter the hour (1-12): </label>
           <input type="number" min="1" max="12" value={this.state.hour} onChange={this.hourstate} /><br/>

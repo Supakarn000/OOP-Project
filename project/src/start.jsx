@@ -1,16 +1,21 @@
 import React from "react";
 import { Navigate, Link } from "react-router-dom";
 import "../CSS/start.css";
+import './App.css';
 import image from "./image/300.png";
+import eta from "./image/ETA.png";
+import etadisc from './image/eta_disc.png'
 import Lottie from 'lottie-react';
 import hi from './image/animation_lokbdp7i.json';
+import Navbar from "../component/navbar";
 
 const Main = () => {
     return (
-        <div style={{ backgroundColor: "#f0f0f0", height: "100vh" }}>
+        <div style={{ backgroundColor: "#f0f0f0", height: "150vh" }}>
+            <Navbar />
             <div className="image-container" >
                 <Lottie animationData={hi} className="center-animation" />
-                <h1>Choose Jode SI</h1>
+                <h1>Welcome Kub r jarn</h1>
             </div>
             <div className="container">
                 <div className="btn">
@@ -96,14 +101,18 @@ const Main = () => {
                             </Link>
                         </div>
                     </div>
-
                 </div>
             </div>
 
 
 
             <footer className="container">
-                {/* <img src={image} alt="image" className="App-logo"/> */}
+                <div style={{ textAlign: "center" }}>
+                    {/* <img src={eta} alt="image" className="rotate-animation" style={{ maxWidth: "20%" }} /> */}
+                    <img src={etadisc} alt="image" className="rotate-animation" style={{ maxWidth: "20%",padding:"2rem" }} />
+                    <img src={etadisc} alt="image" className="rotate-animation" style={{ maxWidth: "20%" ,padding:"2rem" }} />
+                </div>
+                {/* <img src={image} alt="image" className="rotate-animation"/> */}
             </footer>
         </div>
     )

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Navbar from "../component/navbar";
 class Kor34 extends Component {
   constructor(props) {
     super(props);
@@ -31,6 +31,7 @@ class Kor34 extends Component {
 
     return (
       <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
+        <Navbar />
         <div>
           <h1>sameFirstLast</h1>
           <label>

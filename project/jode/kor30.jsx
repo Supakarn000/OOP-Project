@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Navbar from "../component/navbar";
 class Kor30 extends Component {
   constructor(props) {
     super(props);
@@ -30,6 +30,7 @@ class Kor30 extends Component {
 
     return (
       <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
+        <Navbar />
         <div>
           <h1>StringTimes</h1>
           <label>

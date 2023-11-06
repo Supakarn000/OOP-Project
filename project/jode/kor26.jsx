@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Navbar from '../component/navbar';
 class Kor26 extends Component {
   constructor(props) {
     super(props);
@@ -50,6 +50,7 @@ class Kor26 extends Component {
   render() {
     return (
     <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
+      <Navbar />
         <h1>S1More4</h1>
         <p>Input n:</p>
         <input type="number" value={this.state.n} onChange={this.nstate} />

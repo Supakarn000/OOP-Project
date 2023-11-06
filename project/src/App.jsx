@@ -25,6 +25,7 @@ import Kor31 from '../jode/kor31'
 import Kor32 from '../jode/kor32'
 import Kor33 from '../jode/kor33'
 import Kor34 from '../jode/kor34'
+import Caculator from '../caculator/caculator.jsx'
 
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
           <Route path='/kor32' element={<Kor32/>}/>
           <Route path='/kor33' element={<Kor33/>}/>
           <Route path='/kor34' element={<Kor34/>}/>
+          <Route path='/cal' element={<Caculator/>}/>
         </Routes>
       </BrowserRouter>
     </div>

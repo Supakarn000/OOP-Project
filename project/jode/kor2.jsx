@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Navbar from "../component/navbar";
 
 class Kor2 extends Component {
   constructor(props) {
@@ -28,16 +29,10 @@ class Kor2 extends Component {
 
     return (
       <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
+        <Navbar />
         <div>
-          <label>
-            Enter จำนวนชั่วโมง:{" "}
-            <input
-              type="number"
-              name="x"
-              value={x}
-              onChange={(e) => this.setState({ x: parseFloat(e.target.value) })}
-            />
-          </label>
+            <h1>Enter จำนวนชั่วโมง:</h1><br/>
+            <input type="number" name="x" value={x} onChange={(e) => this.setState({ x: parseFloat(e.target.value) })}/>
         </div>
         <br />
         <button onClick={this.calculateSum}>Calculate Result</button>
