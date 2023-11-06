@@ -19,6 +19,12 @@ import Kor24 from '../jode/kor24'
 import Kor25 from '../jode/kor25'
 import Kor26 from '../jode/kor26'
 import Kor27 from '../jode/kor27'
+import Kor10 from '../jode/kor10'
+import Kor30 from '../jode/kor30'
+import Kor31 from '../jode/kor31'
+import Kor32 from '../jode/kor32'
+import Kor33 from '../jode/kor33'
+import Kor34 from '../jode/kor34'
 
 
 function App() {
@@ -45,6 +51,12 @@ function App() {
           <Route path='/kor25' element={<Kor25/>}/>
           <Route path='/kor26' element={<Kor26/>}/>
           <Route path='/kor27' element={<Kor27/>}/>
+          <Route path='/kor10' element={<Kor10/>}/>
+          <Route path='/kor30' element={<Kor30/>}/>
+          <Route path='/kor31' element={<Kor31/>}/>
+          <Route path='/kor32' element={<Kor32/>}/>
+          <Route path='/kor33' element={<Kor33/>}/>
+          <Route path='/kor34' element={<Kor34/>}/>
         </Routes>
       </BrowserRouter>
     </div>

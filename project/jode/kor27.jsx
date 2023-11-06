@@ -32,7 +32,7 @@ class Kor27 extends Component {
     return (
         <div style={{justifyContent:"center",textAlign:"center",backgroundColor: "#f0f0f0", height: "100vh"}}>
         <h1>[SInverse]</h1>
-        <p>enter number</p>
+        <p>enter number เว้นวรรคด้วย</p>
         <input type="text" value={this.state.input} onChange={this.handleInputChange} />
         <button onClick={this.calculateSum}>Count</button>
         <p>Result: {this.state.result}</p>

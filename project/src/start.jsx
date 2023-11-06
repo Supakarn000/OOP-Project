@@ -9,8 +9,7 @@ const Main = () => {
     return (
         <div style={{ backgroundColor: "#f0f0f0", height: "100vh" }}>
             <div className="image-container" >
-                {/* <img src={image} alt="image" /> */}
-                <Lottie animationData={hi} className="centered-animation" />
+                <Lottie animationData={hi} className="center-animation" />
                 <h1>Choose Jode SI</h1>
             </div>
             <div className="container">
@@ -45,7 +44,7 @@ const Main = () => {
                     <Link to="/kor11">
                         <button>ข้อ 11</button>
                     </Link>
-                </div><br/>
+                </div><br />
 
                 <div className="container">
                     <div className="btn">
@@ -73,20 +72,38 @@ const Main = () => {
                         <Link to="/kor27">
                             <button>ข้อ 27</button>
                         </Link>
-                        <Link to="/#">
-                            <button>ข้อ #</button>
+                        <Link to="/kor10">
+                            <button>ข้อ 10</button>
                         </Link>
-                        <Link to="/#">
-                            <button>ข้อ #</button>
-                        </Link>
+                    </div><br />
+
+                    <div className="container">
+                        <div className="btn">
+                            <Link to="/kor30">
+                                <button>ข้อ 30</button>
+                            </Link>
+                            <Link to="/kor31">
+                                <button>ข้อ 31</button>
+                            </Link>
+                            <Link to="/kor32">
+                                <button>ข้อ 32</button>
+                            </Link>
+                            <Link to="/kor33">
+                                <button>ข้อ 33</button>
+                            </Link>
+                            <Link to="/kor34">
+                                <button>ข้อ 34</button>
+                            </Link>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
 
 
             <footer className="container">
-                
+                {/* <img src={image} alt="image" className="App-logo"/> */}
             </footer>
         </div>
     )

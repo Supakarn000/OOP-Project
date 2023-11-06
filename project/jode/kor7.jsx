@@ -25,7 +25,6 @@ class Kor7 extends Component {
       }
     };
 
-    // Start the calculation
     for (let i = 0; i < day; i++) {
       if (checkLeap(y - 43)) {
         year[1] = 29;
