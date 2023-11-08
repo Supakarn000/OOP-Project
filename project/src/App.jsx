@@ -26,6 +26,7 @@ import Kor32 from '../jode/kor32'
 import Kor33 from '../jode/kor33'
 import Kor34 from '../jode/kor34'
 import Caculator from '../caculator/caculator.jsx'
+import ScatterPlot from '../jode/plotex.jsx'
 
 
 function App() {
@@ -61,6 +62,7 @@ function App() {
           <Route path='/cal' element={<Caculator/>}/>
         </Routes>
       </BrowserRouter>
+      {/* <ScatterPlot /> */}
     </div>
   )
 }

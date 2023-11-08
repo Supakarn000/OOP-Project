@@ -46,6 +46,9 @@ const Main = () => {
                     <Link to="/kor9">
                         <button>ข้อ 9</button>
                     </Link>
+                    <Link to="/kor10">
+                            <button>ข้อ 10</button>
+                        </Link>
                     <Link to="/kor11">
                         <button>ข้อ 11</button>
                     </Link>
@@ -76,9 +79,6 @@ const Main = () => {
                         </Link>
                         <Link to="/kor27">
                             <button>ข้อ 27</button>
-                        </Link>
-                        <Link to="/kor10">
-                            <button>ข้อ 10</button>
                         </Link>
                     </div><br />
 
